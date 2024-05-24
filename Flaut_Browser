@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flauten Browser</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc, #ff758c);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="search"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width as padding+border can make it wider than 100% otherwise */
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #6a11cb;
+    margin-top: 10px; /* Add margin for better appearance */
+    width: 100%;
+}
+</style>
+</head>
+<body>
+
+<div> <!-- Container to center the content vertically -->
+    <h1>Поисковая система Flauten Browser</h1>
+    <form action="https://yandex.ru/search/" method="get" target="_self"> <!-- Changed _blank to _self to open search in the same tab -->
+        <input type="search" name="text" placeholder="Введите запрос для поиска в Яндексе" required>
+        <input type="submit" value="Поиск">
+    </form>
+</div>
+
+</body>
+</html>
+ сделай поисковую строку меньше
